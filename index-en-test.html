@@ -42,7 +42,7 @@
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
     <link rel="stylesheet" type="text/css" href="css/line-icons.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css" />
 
     <link rel="stylesheet" type="text/css"
           href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,800%7CMontserrat:700%7COswald:300%7CRaleway:300,900)">
@@ -240,6 +240,12 @@
                         - Show us the dot-sign with your hands. Use a finger or your fist to show: I support the fight against AIDS.<br>
                         - Send us an image or video of anything that looks like a dot. It could be the moon, a ladybug or really just about anything that’s round. There are no limits to your creativity.
                       </p>
+                      <div class="box bg-1">
+              					  <a href="https://script.google.com/macros/s/AKfycbye9EUlU32E-eoz1qkdOAurZa3cs35OPTgEg3IEiu_YhhfD4NA/exec");">
+                            <button class="button button--moema button--text-thick button--text-upper button--size-s">
+                        Click to upload</a></button>
+
+              				</div>
                     </div>
               </div>
             </div>
@@ -248,102 +254,24 @@
 
       <!--/* END about SECTION */-->
 
+      <section id="footer" class="light">
 
 
-      <!--/* contact SECTION */-->
 
-      <section id="contact">
-          <div class="container PaddingVertical100">
+          <div class="bottomLine">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-6 centered-sm">
+                          <p class="copyright no-margin-bottom">© 2015 dotHIV gemeinnuetziger e.V. All Rights Reserved.</p>
+                      </div>
 
-
-              <div class="clearfix PaddingVertical30"></div>
-
-              <!--content-->
-              <div class="row">
-
-                  <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-center"
-                       data-scroll-reveal="enter right move over 1s after 0.2s">
-                      <h3 class="SimpleText">Upload option will be available soon<br><br></h3>
-
+                      <div class="col-md-6 text-right centered-sm SoftGreyText">
+                          <a href="http://sunshine.hiv/index-en-data-protection.html" target="_blank" class="WhiteText">Imprint / Terms of Use / Privacy policy</a>
+                      </div>
                   </div>
-
-
-                  <!-- Include the Google CSS package -->
-                  <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons.css">
-
-                  <!-- You can also include your own CSS styles -->
-                  <style>
-                    form { margin: 40px auto; }
-                    input { display:inline-block; margin: 20px; }
-                  </style>
-
-                  <script>
-
-                    // The function will be called after the form is submitted
-                    function uploadFile() {
-                      document.getElementById('uploadFile').value = "Uploading File..";
-                      google.script.run
-                         .withSuccessHandler(fileUploaded)
-                         .uploadFiles(document.getElementById("labnol"));
-                      return false;
-                    }
-
-                    // This function will be called after the Google Script has executed
-                    function fileUploaded(status) {
-                      document.getElementById('labnol').style.display = 'none';
-                      document.getElementById('output').innerHTML = status;
-                    }
-
-                  </script>
-
-
-      <form id="myForm">
-          <input type="text" name="myName" placeholder="Your name..">
-          <input type="file" name="myFile">
-          <input type="submit" value="Upload File"
-                 onclick="this.value='Uploading..';
-                          google.script.run.withSuccessHandler(fileUploaded)
-                          .uploadFiles(this.parentNode);
-                          return false;">
-      </form>
-
-      <div id="output"></div>
-
-      <script>
-          function fileUploaded(status) {
-              document.getElementById('myForm').style.display = 'none';
-              document.getElementById('output').innerHTML = status;
-          }
-      </script>
-
-      <style>
-       input { display:block; margin: 20px; }
-      </style>
               </div>
-              <!--end content-->
           </div>
       </section>
-
-      <!--/* END contact SECTION */-->
-
-<section id="footer" class="light">
-
-
-
-    <div class="bottomLine">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 centered-sm">
-                    <p class="copyright no-margin-bottom">© 2015 dotHIV gemeinnuetziger e.V. All Rights Reserved.</p>
-                </div>
-
-                <div class="col-md-6 text-right centered-sm SoftGreyText">
-                    <a href="https://click4life.hiv/en/c/imprint" target="_blank" class="WhiteText">Imprint / Terms of Use / Privacy policy</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 <script type="text/javascript" src="js/scripts.min.js"></script>
@@ -382,7 +310,13 @@
 
 
 </script>
-
+<script type="text/javascript">
+// Popup window code
+function newPopup(url) {
+  popupWindow = window.open(
+    url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+}
+</script>
 <script src="js/OscarBackgroundEffect.js"></script>
 
 
