@@ -198,12 +198,12 @@ body {
 }
 
 a{
-    color: #252525;
+    color: #e00e7b;
     text-decoration: none;
 }
 
 a:hover, a:focus{
-    color: #626262;
+    color: #ad0e61;
     text-decoration: none;
     outline: 0;
 }
@@ -976,6 +976,15 @@ h3.TextNexttoNumber {
 
 }
 
+#partners {
+    background-color: #fff;
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-left:15px;
+    overflow:hidden;
+
+}
+
 
 #text-separator-testimonials h2{
     color:white;
@@ -1007,10 +1016,16 @@ h3.TextNexttoNumber {
     margin-bottom:50px;
 }
 
+#partners {
+    font-size:28px;
+    line-height:1.2;
+    margin-bottom:50px;
+}
+
 
 .clientLogo img{
     width:180px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 
@@ -1314,7 +1329,7 @@ h3.TextNexttoNumber {
 }
 
 .ClientLogo img{
-    top: 20px;
+    top: 10px;
     position: relative;
     left:40px;
 }
