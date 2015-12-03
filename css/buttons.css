@@ -2,15 +2,6 @@
 .bg-1 {
 	background: #ffffff;
 	color: #fff;
-	float: right;
-	position: relative;
-	left: -50%; /* or right 50% */
-	text-align: left;
-	}
-
-
-
-
 }
 .bg-2 {
 	background: #7986cb;
@@ -23,7 +14,7 @@
 
 /* Common button styles */
 .button {
-
+	
 	min-width: 150px;
 	max-width: 250px;
 	display: block;
