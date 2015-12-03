@@ -214,8 +214,8 @@
 /*Medium Smart Phones v2*/
 @media screen and (max-width: 640px){
     h1 {
-        font-size: 36px;
-        letter-spacing: 10px;
+        font-size: 26px;
+        letter-spacing: 5px;
     }
 
     h2 {
@@ -224,6 +224,11 @@
         letter-spacing: 8px;
     }
 
+    h5{
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+    }
     .introLogo {
         width: 80px;
     }
@@ -304,7 +309,7 @@
     }
 
     h1 {
-        font-size: 36px;
+        font-size: 20px;
         letter-spacing: 0px;
     }
 
@@ -314,6 +319,11 @@
         letter-spacing: 0px;
     }
 
+    h5{
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+    }
     .NegativeMarginSection {
         margin-top: 0
     }
@@ -345,7 +355,7 @@
 
 
     h1 {
-        font-size: 32px;
+        font-size: 20px;
         letter-spacing: 0px;
     }
 
@@ -361,6 +371,11 @@
         letter-spacing: 0px;
     }
 
+    h5{
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+    }
 
     .navbar-default {
         padding-left: 0px;
