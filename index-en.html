@@ -201,8 +201,10 @@
         <!--/* Upload button */-->
         <div class="box bg-1">
           <button class="button button--moema button--text-thick button--text-upper button--size-s"
-          onclick="window.location='https://script.google.com/macros/s/AKfycbwMeHBpkkIkxpbTAS-xMdnTeeIcE-pHvW0vRM2TXkcZak74MwE/exec';">Click to upload</button>
+          onclick="return popitup('https://script.google.com/macros/s/AKfycbwMeHBpkkIkxpbTAS-xMdnTeeIcE-pHvW0vRM2TXkcZak74MwE/exec')"> Click to upload</button>
         </div>
+
+
         <!--/* END Upload button */-->
       </div>
 
@@ -289,7 +291,16 @@
 <script type="text/javascript" src="js/scripts.min.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/OscarBackgroundEffect.js"></script>
-
+<script language="javascript" type="text/javascript">
+<!--
+function popitup(url) {
+	newwindow=window.open(url,'name','height=200,width=150');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+</script>
+// -->
+</script>
 
 </body>
 </html>
