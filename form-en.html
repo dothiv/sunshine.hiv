@@ -104,13 +104,13 @@ jQuery( document ).ready(function( $ ) {
     document.getElementById('uploadFile').value = "Uploading File..";
     google.script.run
        .withSuccessHandler(fileUploaded)
-       .uploadFiles(document.getElementById("labnol"));
+       .uploadFiles(document.getElementById("upload"));
     return false;
   }
 
   // This function will be called after the Google Script has executed
   function fileUploaded(status) {
-    document.getElementById('labnol').style.display = 'none';
+    document.getElementById('upload').style.display = 'none';
     document.getElementById('output').innerHTML = status;
   }
 
