@@ -8,7 +8,7 @@
 <script data-cfasync="false" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
-<title>UPLOAD FORM ENGLISH</title>
+<title>Upload Form</title>
 </head>
 <body>
 <div class="form-style-5">
@@ -38,7 +38,7 @@
 </div>
 </fieldset>
 <p id="result"></p>
-<input type="submit" value="Send"/>
+<input type="submit" id="uploadFile" value="Upload File" onclick="this.value='Uploading..';uploadFile();">
 </form>
 
 </div>
@@ -95,6 +95,25 @@ jQuery( document ).ready(function( $ ) {
 		event.preventDefault();
 	});
 });
+</script>
+
+<script>
+
+  // The function will be called after the form is submitted
+  function uploadFile() {
+    document.getElementById('uploadFile').value = "Uploading File..";
+    google.script.run
+       .withSuccessHandler(fileUploaded)
+       .uploadFiles(document.getElementById("labnol"));
+    return false;
+  }
+
+  // This function will be called after the Google Script has executed
+  function fileUploaded(status) {
+    document.getElementById('labnol').style.display = 'none';
+    document.getElementById('output').innerHTML = status;
+  }
+
 </script>
 
 </body>
