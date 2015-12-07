@@ -107,23 +107,7 @@ jQuery( document ).ready(function( $ ) {
 });
 </script>
 
-<script>
 
-  // The function will be called after the form is submitted
-  function uploadFile() {
-    document.getElementById('uploadFile');
-    google.script.run
-       .withSuccessHandler(fileUploaded)
-       .uploadFiles(document.getElementById("Upload"));
-    return false;
-  }
-
-  // This function will be called after the Google Script has executed
-  function fileUploaded(status) {
-    document.getElementById('Upload').style.display = 'none';
-  }
-
-</script>
 
 </body>
 </html>
