@@ -1,3 +1,6 @@
+RewriteEngine On
+Options +FollowSymLinks
+
 RewriteCond %{THE_REQUEST} ^.*/index.php
 RewriteRule ^(.*)index.php$ http://sunshine.hiv/$1 [R=301,L]
 
