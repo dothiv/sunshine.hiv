@@ -1,13 +1,14 @@
-RewriteEngine On
-Options +FollowSymLinks
-
-RewriteCond %{HTTP_HOST} ^http://sunshine.hiv/
-RewriteRule (.*) http://sunshine.hiv/$1 [R=301,L]
-
-RewriteCond %{THE_REQUEST} ^.*/index.html
-RewriteRule ^(.*)index.html$ http://sunshine.hiv/$1 [R=301,L]
-
 RewriteCond %{THE_REQUEST} ^.*/index.php
 RewriteRule ^(.*)index.php$ http://sunshine.hiv/$1 [R=301,L]
 
-http://sunshine.hiv/index-en.html sunshine.hiv
+
+DirectoryIndex index.html
+
+//Prevent viewing of .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+//Prevent directory listings
+Options All -Indexes
