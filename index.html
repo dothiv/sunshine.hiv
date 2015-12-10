@@ -66,7 +66,7 @@
 
 
 <header>
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="50">
+  <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="50">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -102,7 +102,6 @@
       <div class="col-md-12 text-center">
         <h1 class="WhiteText Glow">Das längste<br>Musik-Video der Welt<br> – für den guten Zweck.</h1>
       </div>
-
       <div class="col-md-12 text-center">
         <h5 class="WhiteText">HIV und AIDS gehören zu den größten Herausforderungen unseres Zeitalters. Zur Zeit leben 37 Millionen Menschen mit HIV und nur die Hälfte von ihnen hat Zugang zu lebensrettender medizinischer Versorgung. Das soll sich ändern. Mit drei Buchstaben und einem Punkt setzt .hiv als einzige wohltätige Domainendung der Welt ein sichtbares Zeichen für das Ende von AIDS. </h5>
       </div>
@@ -117,10 +116,10 @@
 
 <section id="SecondIntro" class="PositionRelative">
   <div class="container PaddingVertical0 NegativeMarginSection WhiteIntroBackground">
-    <div class="row">
+
       <img src="img/connectorline.png" data-stellar-ratio="0.9" data-stellar-vertical-offset="500" class="textSepLogo" alt="Connector line">
       <div class="col-md-12 text-center">
-        <div class="PaddingVertical60 PaddingHorizontal60">
+        <div class="PaddingVertical60 PaddingHorizontal60"  "text-center">
           <h1 class="PinkText" data-scroll-reveal="enter right move 10px over 1s after 0.2s">Der Sunshine Song</h3>
             <h3 class="SimpleText" data-scroll-reveal="enter right move 10px over 1s after 0.4s">
               Gemeinsam mit den Söhnen Mannheims haben wir ein Lied komponiert, das Zuversicht und Hoffnung gibt.
@@ -128,10 +127,10 @@
               Und ein Miteinander schaffen, das allen – positiv wie negativ – das gleiche Recht auf Glück und Freude gibt.
               Auch darum gehen Einnahmen aus dem Verkauf des Songs an wohltätige HIV-Projekte.
               Und auch Du kannst mit uns Deine Unterstützung zeigen. Denn zusammen machen wir das längste Musik-Video aller Zeiten.
-            </p><br>
+            </h3><br>
           </div>
         </div>
-      </div>
+
     </div>
 </section>
 
@@ -140,13 +139,13 @@
 
 <!--/* VIDEO Section */-->
 
-<section id="SecondIntro" class="PositionRelative">
+<section class="PositionRelative">
   <div class="container PaddingVertical0 NegativeMarginSection WhiteIntroBackground">
     <div class="row">
       <img src="img/connectorline.png" data-stellar-ratio="0.9" data-stellar-vertical-offset="500" class="textSepLogo" alt="Connector line">
         <div class="PaddingVertical60 PaddingHorizontal60 text-center">
           <h3 class="PinkText" data-scroll-reveal="enter right move 10px over 1s after 0.2s">Schau Dir hier die Nachricht von den Söhnen Mannheims an:</h3>
-          <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/kCkRvEWA-lo' frameborder='0' allowfullscreen></iframe></div>
+          <div class='embed-container'><iframe src='https://www.youtube.com/embed/kCkRvEWA-lo' frameborder='0' allowfullscreen></iframe></div>
           <img src="img/connectorline.png" data-stellar-ratio="0.9" data-stellar-vertical-offset="500" class="textSepLogo" alt="Connector line">
         </div>
       </div>
@@ -305,13 +304,11 @@
 <script type="text/javascript" src="js/scripts.min.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/OscarBackgroundEffect.js"></script>
-<script language="javascript" type="text/javascript">
-<!--
+<script>
 function popitup(url) {
-	newwindow=window.open(url,'name','height=800,width=800');
-	if (window.focus) {newwindow.focus()}
-	return false;
-}
+  newwindow=window.open(url,'name','height=800,width=800');
+  if (window.focus) {newwindow.focus()}
+  return false; }
 </script>
 </body>
 </html>
