@@ -12,6 +12,7 @@ $( window ).load(function() {
 
 
 
+
 $('.CubeWrapper').on({
     mouseenter: function () {
         $(this).removeClass( 'show-front' );
@@ -105,7 +106,9 @@ $(document).ready(function () {
             /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
             /* navbar hide */
             /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-            $().showUp('.navbar');
+            $().showUp('.navbar:not(.noShowUp)');
+
+
 
         }
 
@@ -121,6 +124,13 @@ $(document).ready(function () {
         $('#intro').css({height: wh});
         $('#intro.HalfBackground').css({height: wh/3*2});
         $('#intro.ThreeQuarters').css({height: wh/4*3});
+
+        if($(window).width()<768){
+            $('.TopMenuWrapperforSize').css({ width: $('.NavbarEcommerceTop').width() });
+        }
+
+
+
     }
 
     introHeight();
@@ -129,6 +139,7 @@ $(document).ready(function () {
         //Update slider height on resize
         introHeight();
     });
+
 
 
 
@@ -224,12 +235,46 @@ $(document).ready(function () {
     $("#owl-testimonials").owlCarousel({
         singleItem:	true,
         autoPlay:	true,
-        navigation: true,
+        navigation: false,
         pagination:true,
         navigationText: [
             "<i class='fa fa-angle-left fa-4x'></i>",
             "<i class='fa fa-angle-right fa-4x'></i>"
         ]
+    });
+
+
+    var carouselFreelance = $(".owl-freelancer");
+
+    carouselFreelance.owlCarousel({
+        singleItem:	true,
+        autoPlay:	false,
+        navigation: false,
+        pagination:true
+
+    });
+
+
+    $('.ServiceWrapperB').click(function(){
+        carouselFreelance.trigger('owl.goTo', 0)
+    });
+
+    $('.ServiceWrapperC').click(function(){
+        carouselFreelance.trigger('owl.goTo', 1)
+    });
+    $('.ServiceWrapperE').click(function(){
+        carouselFreelance.trigger('owl.goTo', 2)
+    });
+
+    $('.ServiceWrapperP').click(function(){
+        carouselFreelance.trigger('owl.goTo', 3)
+    });
+
+    $("#owl-testimonials2").owlCarousel({
+        singleItem:	true,
+        autoPlay:	true,
+        navigation: false,
+        pagination:true
     });
 
     $('.owl-blog').owlCarousel({
@@ -241,6 +286,85 @@ $(document).ready(function () {
             "<i class='fa fa-angle-right fa-2x'></i>"
         ],
         pagination:true
+    });
+
+
+    var owl = $("#owlcarouseltoprated");
+    owl.owlCarousel({
+        singleItem: true,
+        items:1,
+        pagination:true
+    });
+    // Custom Navigation Events
+    $(".customNavigationRated .next").click(function(){
+        owl.trigger('owl.next');
+    });
+    $(".customNavigationRated .prev").click(function(){
+        owl.trigger('owl.prev');
+    });
+
+
+
+    var owl2 = $("#owlcarouselspecial");
+    owl2.owlCarousel({
+        singleItem: true,
+        items:1,
+        pagination:true
+    });
+    // Custom Navigation Events
+    $(".customNavigationSpecial .next").click(function(){
+        owl2.trigger('owl.next');
+    });
+    $(".customNavigationSpecial .prev").click(function(){
+        owl2.trigger('owl.prev');
+    });
+
+    var owl3 = $("#owlcarouselnewin");
+    owl3.owlCarousel({
+        singleItem: true,
+        items:1,
+        pagination:true
+    });
+    // Custom Navigation Events
+    $(".customNavigationNew .next").click(function(){
+        owl3.trigger('owl.next');
+    });
+    $(".customNavigationNew .prev").click(function(){
+        owl3.trigger('owl.prev');
+    });
+
+
+
+
+    $('.owl-blog2').owlCarousel({
+        singleItem: false,
+        items:3,
+        navigation: false,
+    });
+
+    $('#owl-insta').owlCarousel({
+        singleItem: false,
+        items:5,
+        navigation: false,
+    });
+
+    $('.owl-ecommerce').owlCarousel({
+        singleItem: false,
+        items:4,
+        navigation: false
+    });
+
+    $('.owl-ecommerce2').owlCarousel({
+        singleItem: false,
+        items:4,
+        navigation: false
+    });
+
+
+    $('.owl-ecommerce3').owlCarousel({
+        singleItem: false,
+        items:4,
+        navigation: false
     });
 
 
@@ -283,10 +407,14 @@ $(document).ready(function () {
     }, { offset: 500 });
 
 
+    var filtertextholder=$('.FilterPositionAboslute .textholder');
+    $( "#filters .btn" ).click(function() {
+        var Text = $(this).text();
+        filtertextholder.text( Text );
+    });
 
 
 });
-
 
 
 
