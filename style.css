@@ -1617,9 +1617,9 @@ iframe {
 .button--border-thick {
 	border: 3px solid;
 }
-/* Individual button styles */
 
-/* Moema */
+/* Popup button styles */
+
 .button--moema {
 	padding: 1.5em 3em;
 	border-radius: 50px;
@@ -1703,4 +1703,14 @@ iframe {
 		-webkit-transform: scale3d(1, 1, 1);
 		transform: scale3d(1, 1, 1);
 	}
+}
+
+/* Social icons */
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
 }
