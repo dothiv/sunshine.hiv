@@ -295,8 +295,13 @@
 <!--/* SCRIPTS */-->
 <script type="text/javascript" src="js/scripts.min.js"></script>
 <script src="js/custom.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
 <script src="js/OscarBackgroundEffect.js"></script>
+<script>
+function popitup(url) {
+  newwindow=window.open(url,'name','height=800,width=800');
+  if (window.focus) {newwindow.focus()}
+  return false;}
+</script>
 <!--/* end SCRIPTS */-->
 </body>
 </html>
