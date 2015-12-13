@@ -1521,25 +1521,11 @@ iframe {
 }
 
 
-/* Box colors */
-.bg-1 {
-	background: #ffffff;
-	color: #fff;
-}
-.bg-2 {
-	background: #7986cb;
-	color: #fff;
-}
-.bg-3 {
-	background: #37474f;
-	color: #fff;
-}
 
 /* Common button styles */
 .button {
-	min-width: 150px;
+	min-width: 100px;
 	max-width: 250px;
-	display: block;
 	margin: 1em;
 	padding: 1em 2em;
 	border: none;
@@ -1558,41 +1544,10 @@ iframe {
 	vertical-align: middle;
 }
 
-/* Text color adjustments (we could stick to the "inherit" but that does not work well in Safari) */
-.bg-1 .button {
-	color: #ffffff;
-	border-color: #37474f;
-}
-.bg-2 .button {
-	color: #ffffff;
-	border-color: #ECEFF1;
-}
-.bg-3 .button {
-	color: #ffffff;
-	border-color: #fff;
-}
-
-/* Sizes */
-.button--size-s {
-	font-size: 14px;
-}
-.button--size-m {
-	font-size: 16px;
-}
-.button--size-l {
-	font-size: 18px;
-}
-
 /* Typography and Roundedness */
 .button--text-upper {
 	letter-spacing: 2px;
 	text-transform: uppercase;
-}
-.button--text-thin {
-	font-weight: 300;
-}
-.button--text-medium {
-	font-weight: 500;
 }
 .button--text-thick {
 	font-weight: 600;
@@ -1607,21 +1562,10 @@ iframe {
 	border-radius: 40px;
 }
 
-/* Borders */
-.button--border-thin {
-	border: 1px solid;
-}
-.button--border-medium {
-	border: 2px solid;
-}
-.button--border-thick {
-	border: 3px solid;
-}
 
 /* Popup button styles */
 
 .button--moema {
-	padding: 1.5em 3em;
 	border-radius: 50px;
 	background: #e00e7b;
 	color: #ffffff;
@@ -1708,7 +1652,9 @@ iframe {
 /* Social icons */
 ul.share-buttons{
   list-style: none;
-  padding: 0;
+  padding: 1em;
+  position: relative;
+
 }
 
 ul.share-buttons li{
